@@ -1,0 +1,20 @@
+num = int(input("Enter the number of elements: "))
+
+arr = []
+
+print("Enter the elements:")
+for i in range(num):
+    element = float(input())
+    arr.append(element)
+
+largest = arr[0]
+smallest = arr[0]
+
+for element in arr:
+    if element > largest:
+        largest = element
+    if element < smallest:
+        smallest = element
+
+print("Largest number:", largest)
+print("Smallest number:", smallest)
