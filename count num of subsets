@@ -1,0 +1,8 @@
+size = int(input("Enter array size: "))
+if size <= 0:
+    print("Invalid input")
+else:
+    print("Enter {} elements:".format(size))
+    arr = list(map(int, input().split()))
+    total_subsets = 2 ** size
+    print(total_subsets)
