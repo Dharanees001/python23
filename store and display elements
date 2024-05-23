@@ -1,0 +1,9 @@
+num = int(input("Enter the number of elements: "))
+arr = []
+print("Enter the elements:")
+for i in range(num):
+    element = int(input())
+    arr.append(element)
+print("Elements in the array:")
+for element in arr:
+    print(element, end=" ")
