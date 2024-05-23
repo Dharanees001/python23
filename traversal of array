@@ -1,0 +1,15 @@
+size = int(input("Enter array size: "))
+if size <= 0:
+    print("Invalid input")
+else:
+    print("Enter array elements:")
+    arr = list(map(int, input().split()))
+    non_zero_index = 0
+    for num in arr:
+        if num != 0:
+            arr[non_zero_index] = num
+            non_zero_index += 1
+    while non_zero_index < size:
+        arr[non_zero_index] = 0
+        non_zero_index += 1
+    print(*arr)
