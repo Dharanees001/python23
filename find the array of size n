@@ -1,0 +1,15 @@
+size = int(input("Enter array size: "))
+if size <= 0:
+    print("Invalid input")
+else:
+    print("Enter {} array elements:".format(size))
+    arr = list(map(int, input().split()))
+    seen = set()
+    for num in arr:
+        if num in seen:
+            print("The repetitive element:", num)
+            break
+        else:
+            seen.add(num)
+    else:
+        print("Array elements are not repeated")
