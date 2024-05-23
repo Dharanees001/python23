@@ -1,0 +1,13 @@
+import math
+size = int(input("Enter array size: "))
+if size <= 0:
+    print("Invalid input")
+else:
+    print("Enter {} array elements:".format(size))
+    arr = list(map(int, input().split()))
+    largest_not_square = -1
+    for num in arr:
+        if math.isqrt(num) ** 2 != num:
+            if num > largest_not_square:
+                largest_not_square = num
+    print(largest_not_square)
