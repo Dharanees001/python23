@@ -1,0 +1,12 @@
+size = int(input("Enter the array size: "))
+arr = []
+print("Input {} elements in the array:".format(size))
+for i in range(size):
+    element = int(input())
+    arr.append(element)
+unique_elements = set()
+for num in arr:
+    unique_elements.add(num)
+print("The unique elements found in the array are:")
+for num in unique_elements:
+    print(num, end=" ")
